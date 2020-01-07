@@ -1,13 +1,13 @@
 var Grub = function() {
-
     this.age = 0;
     this.color = 'pink';
     this.food = 'jelly';
-
+    // this.eat = function() {}
 };
 
-Grub.prototype.eat = function(value){
-}
+Grub.prototype.eat = function(){ };//why does this work inside and out Grub function, why do we need
+// a constructor when we use this.eat instead of prototype.eat
+Grub.prototype.constructor = Grub;
 
 // Sub Classing
 // Build your first class in Grub.js. Grub will act as the superclass for all

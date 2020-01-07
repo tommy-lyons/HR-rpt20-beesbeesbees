@@ -6,6 +6,9 @@ var ForagerBee = function() {
   this.treasureChest = [];
 };
 
+// same type of issue here - the retiredforager.gamble methd can't see this method if it's
+// written inside the foragerbee constructor function
+
 ForagerBee.prototype = Object.create(Grub.prototype);
 ForagerBee.prototype.forage = function(treasure){
   this.treasureChest.push(treasure);

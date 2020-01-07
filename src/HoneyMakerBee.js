@@ -6,6 +6,9 @@ var HoneyMakerBee = function() {
 };
 
 HoneyMakerBee.prototype = Object.create(Grub.prototype);
+
+//why does this work inside the constructor function,
+//and not with object.create
 HoneyMakerBee.prototype.makeHoney = function() {
   this.honeyPot++;
 }
@@ -14,7 +17,7 @@ HoneyMakerBee.prototype.giveHoney = function () {
 }
 
 HoneyMakerBee.prototype.constructor = HoneyMakerBee;
-//^--- WTF
+//^--- WTF is going on here...
 
 
 // call the Bee superclass

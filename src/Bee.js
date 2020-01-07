@@ -1,21 +1,20 @@
 var Bee = function() {
-
   Grub.call(this);
-
   this.age = 5;
   this.color = 'yellow';
   this.job = 'keep on growing';
-
 };
 
+/* why does this expression need to be outside of the constructor function; whereas
+   in the case of the Grub() constructor function it could be inside just as well as out..*/
 Bee.prototype = Object.create(Grub.prototype);
 Bee.prototype.constructor = Bee;
 
+// can we talk about the difference between these two properties?
 // .prototype
-
 // vs.
-
 // .__proto__
+
 
 // Create a Bee class, in pseudoclassical style, with:
 //  call the Grub superclass

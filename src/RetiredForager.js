@@ -10,7 +10,6 @@ RetiredForagerBee.prototype = Object.create(Grub.prototype);
 RetiredForagerBee.prototype.forage = function () {
   return 'I am too old, let me play cards instead';
 }
-
 RetiredForagerBee.prototype.gamble = ForagerBee.prototype.forage;
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
