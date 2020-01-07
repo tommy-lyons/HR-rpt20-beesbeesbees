@@ -7,7 +7,6 @@ var Grub = function() {
 };
 
 Grub.prototype.eat = function(value){
-
 }
 
 // Sub Classing
