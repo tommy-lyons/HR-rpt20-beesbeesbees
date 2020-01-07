@@ -1,29 +1,21 @@
 var Bee = function() {
 
-  var bee = new Grub;
+  Grub.call(this);
 
-  // grub.call(this, food, eat);
-  bee.age = 5;
-  bee.color = 'yellow';
-  bee.job = 'keep on growing';
+  this.age = 5;
+  this.color = 'yellow';
+  this.job = 'keep on growing';
 
-  return bee;
 };
 
-// Bee.prototype.age = 3;
-// Bee.prototype.color = 'yelow';
-// Bee.prototype.job = 'keep on growing';
+Bee.prototype = Object.create(Grub.prototype);
+Bee.prototype.constructor = Bee;
 
+// .prototype
 
+// vs.
 
-
-// var Car = function () {
-//   this.loc = loc;
-// }
-
-// var amy = new Car(1)
-
-
+// .__proto__
 
 // Create a Bee class, in pseudoclassical style, with:
 //  call the Grub superclass

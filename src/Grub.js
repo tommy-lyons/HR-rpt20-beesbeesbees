@@ -10,9 +10,6 @@ Grub.prototype.eat = function(value){
 
 }
 
-
-
-
 // Sub Classing
 // Build your first class in Grub.js. Grub will act as the superclass for all
 // other types of bees. Work through the repo in the order specified below,
