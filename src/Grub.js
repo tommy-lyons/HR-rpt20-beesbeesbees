@@ -5,7 +5,7 @@ var Grub = function() {
     // this.eat = function() {}
 };
 
-Grub.prototype.eat = function(){ };//why does this work inside and out Grub function, why do we need
+Grub.prototype.eat = function(){ }; //why does this work inside and outside the Grub function, why do we need
 // a constructor when we use this.eat instead of prototype.eat
 Grub.prototype.constructor = Grub;
 
